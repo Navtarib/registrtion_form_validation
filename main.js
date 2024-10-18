@@ -24,7 +24,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
 
     // Phone number validation
     const phone = document.getElementById('phone').value;
-    if (!/^\d{10}$/.test(phone)) {
+    if (!/^\d{11}$/.test(phone)) {
         valid = false;
         document.getElementById('phoneError').textContent = "Phone number must be 10 digits.";
     } else {
